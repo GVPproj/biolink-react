@@ -2,7 +2,7 @@ import { Disclosure } from "@headlessui/react"
 
 export default function LinksList() {
   return (
-    <>
+    <main>
       <Disclosure>
         <Disclosure.Button>A youtube vid</Disclosure.Button>
 
@@ -19,6 +19,6 @@ export default function LinksList() {
         </Disclosure.Panel>
       </Disclosure>
       <button>A link</button>
-    </>
+    </main>
   )
 }

@@ -1,4 +1,4 @@
-import SocialIcon from "./Tooltip"
+import SocialIcon from "./SocialIcon"
 
 export default function Header() {
   return (
