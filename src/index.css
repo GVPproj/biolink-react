@@ -1,0 +1,115 @@
+/* Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;700&display=swap");
+
+/* CSS Reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/* p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+} */
+#root {
+  isolation: isolate;
+}
+
+/* Global Settings */
+
+:root {
+  --mono-font-family: "Roboto Mono", monospace;
+  --bg-color: hsl(216, 100%, 29%);
+  --text-color-main: hsl(0, 100%, 100%, 0.87);
+  --accent-color: hsl(338, 86%, 84%);
+}
+
+html,
+body {
+  font-family: var(--mono-font-family);
+  background-color: var(--bg-color);
+  color: var(--text-color-main);
+  text-align: center;
+}
+body {
+  margin: 0 auto;
+  max-width: 480px;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  padding: 2em;
+}
+
+.headshot {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 100%;
+  z-index: 1;
+  box-shadow: var(--text-color) 0px 0px 2px 0px;
+}
+
+.logo{
+  max-width: 320px;
+  margin-bottom: 1em;
+}
+
+.socials-div {
+  display: flex;
+  gap: 1.75em;
+} 
+
+.social-icon {
+  width: 2rem;
+  filter: invert(90%) sepia(4%) saturate(5647%) hue-rotate(289deg)
+    brightness(97%) contrast(101%);
+}
+.social-icon:hover,
+.social-icon:focus {
+  filter: invert(72%) sepia(88%) saturate(2331%) hue-rotate(297deg)
+    brightness(100%) contrast(95%);
+}
