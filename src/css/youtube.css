@@ -1,3 +1,5 @@
+/* thanks ibrahimcesar for this React Lite YouTube Embed! */
+
 .yt-lite {
     background-color: #000;
     position: relative;
@@ -6,21 +8,6 @@
     background-position: center center;
     background-size: cover;
     cursor: pointer;
-}
-
-/* gradient */
-.yt-lite::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAADGCAYAAAAT+OqFAAAAdklEQVQoz42QQQ7AIAgEF/T/D+kbq/RWAlnQyyazA4aoAB4FsBSA/bFjuF1EOL7VbrIrBuusmrt4ZZORfb6ehbWdnRHEIiITaEUKa5EJqUakRSaEYBJSCY2dEstQY7AuxahwXFrvZmWl2rh4JZ07z9dLtesfNj5q0FU3A5ObbwAAAABJRU5ErkJggg==);
-    background-position: top;
-    background-repeat: repeat-x;
-    height: 60px;
-    padding-bottom: 50px;
-    width: 100%;
-    transition: all 0.2s cubic-bezier(0, 0, 0.2, 1);
 }
 
 /* responsive iframe with a 16:9 aspect ratio
@@ -43,14 +30,14 @@
 .yt-lite > .lty-playbtn {
     width: 70px;
     height: 46px;
-    background-color: #212121;
+    background-color: hsl(216, 100%, 29%);
     z-index: 1;
     opacity: 0.8;
-    border-radius: 14%; /* TODO: Consider replacing this with YT's actual svg. Eh. */
+    border-radius: 14%;
     transition: all 0.2s cubic-bezier(0, 0, 0.2, 1);
 }
 .yt-lite:hover > .lty-playbtn {
-    background-color: #f00;
+    background-color: hsl(338, 86%, 74%);
     opacity: 1;
 }
 /* play button triangle */
@@ -58,7 +45,7 @@
     content: '';
     border-style: solid;
     border-width: 11px 0 11px 19px;
-    border-color: transparent transparent transparent #fff;
+    border-color: transparent transparent transparent hsl(0, 100%, 100%, 0.87);
 }
 
 .yt-lite > .lty-playbtn,
