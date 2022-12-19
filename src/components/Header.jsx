@@ -1,11 +1,12 @@
-import SocialIcon from "./SocialIcon"
+import SocialIcon from "../elements/SocialIcon"
+import SocialIconsGrid from "../elements/SocialIconsGrid"
 
 export default function Header() {
   return (
     <header>
       <img
         className="headshot"
-        src="/graham.png"
+        src="/gvp_blurry.jpg"
         alt="photo of Graham Van Pelt"
       ></img>
       <img
@@ -13,28 +14,7 @@ export default function Header() {
         src="/gvp-at-namecrop.jpg"
         alt="Graham Van Pelt"
       ></img>
-      <div className="socials-div">
-        <SocialIcon
-          href="https://www.instagram.com/grahamvanpelt/"
-          icon="/svg/brand-instagram.svg"
-          siteName="Instagram"
-        />
-        <SocialIcon
-          href="https://www.twitter.com/grahamvanpelt"
-          icon="/svg/brand-twitter.svg"
-          siteName="Twitter"
-        />
-        <SocialIcon
-          href="https://www.facebook.com/grahamvanpeltmusic"
-          icon="/svg/brand-facebook.svg"
-          siteName="Facebook"
-        />
-        <SocialIcon
-          href="https://www.instagram.com/grahamvanpelt/"
-          icon="/svg/brand-github.svg"
-          siteName="Github"
-        />
-      </div>
+      <SocialIconsGrid />
     </header>
   )
 }

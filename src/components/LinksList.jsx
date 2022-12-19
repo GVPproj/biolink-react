@@ -1,14 +1,27 @@
-import YouTubeDropdown from "./YouTubeDropdown"
+import YouTubeDropdown from "../elements/YouTubeDropdown"
+import links from "../links"
 
 export default function LinksList() {
-  return (
-    <main>
-      <YouTubeDropdown
-        linkName="a yt video"
-        id="L2vS_050c-M"
-        title="Whats new in Material Design for the web"
-      />
-      <button>A link</button>
-    </main>
-  )
+  const linkElements = links.map((link) => {
+    if (link.isYouTube) {
+      return (
+        <YouTubeDropdown
+          key={link.linkText}
+          linkName={link.linkText}
+          id={link.youTubeId}
+          title={link.youTubeTitle}
+        />
+      )
+    } else {
+      return (
+        <a key={link.linkText} href={link.href}>
+          <button>
+            {link.linkText}
+          </button>
+        </a>
+      )
+    }
+  })
+
+  return <main>{linkElements}</main>
 }
