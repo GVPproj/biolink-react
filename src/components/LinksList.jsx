@@ -1,23 +1,13 @@
-import { Disclosure } from "@headlessui/react"
+import YouTubeDropdown from "./YoutubeDropdown"
 
 export default function LinksList() {
   return (
     <main>
-      <Disclosure>
-        <Disclosure.Button>A youtube vid</Disclosure.Button>
-
-        <Disclosure.Panel>
-          <iframe
-            width="400"
-            height="224"
-            src="https://www.youtube.com/embed/gJaRNO18Y54"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </Disclosure.Panel>
-      </Disclosure>
+      <YouTubeDropdown
+        linkName="a yt video"
+        id="L2vS_050c-M"
+        title="Whats new in Material Design for the web"
+      />
       <button>A link</button>
     </main>
   )

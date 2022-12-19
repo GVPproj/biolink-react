@@ -1,7 +1,9 @@
 export default function Footer(){
+    let year = new Date().getFullYear();
+
     return(
         <footer>
-            <p>Copyright 2023 GVP</p>
+            <p>© {year} Graham Van Pelt</p>
         </footer>
         
     )
