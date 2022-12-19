@@ -14,7 +14,7 @@ export default function LinksList() {
       )
     } else {
       return (
-        <a key={link.linkText} href={link.href}>
+        <a key={link.linkText} href={link.href} target="_blank">
           <button>
             {link.linkText}
           </button>

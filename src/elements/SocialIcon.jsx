@@ -3,7 +3,7 @@ import '../css/tooltip.css'
 
 function SocialIcon(props) {
   return (
-    <a href={props.href}>
+    <a href={props.href} target="_blank">
       <Tooltip.Provider>
         <Tooltip.Root>
           <Tooltip.Trigger asChild>

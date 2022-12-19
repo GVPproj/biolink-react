@@ -147,6 +147,11 @@ button:hover, button:active{
 /* Footer */
 
 footer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
   padding: 2em 1em;
 }
 
