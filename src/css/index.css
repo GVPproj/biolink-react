@@ -78,7 +78,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1em;
+  gap: 1.75em;
   padding: 2em;
 }
 
@@ -87,8 +87,8 @@ header {
 /* Header */
 
 .headshot {
-  width: 7rem;
-  height: 7rem;
+  width: 7.5rem;
+  height: 7.5rem;
   border-radius: 100%;
   z-index: 1;
   box-shadow: var(--text-color-main) 0px 0px 2px 0px;
@@ -97,7 +97,7 @@ header {
 .logo {
   width: 95%;
   max-width: 320px;
-  margin-bottom: 1em;
+  /* margin-bottom: 1em; */
 }
 
 .socials-div {
@@ -118,7 +118,7 @@ header {
 }
 
 header > p{
-  margin-top: 1em;
+  /* margin-top: 1em; */
   text-align: left;
 }
 
