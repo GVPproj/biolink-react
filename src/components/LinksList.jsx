@@ -1,4 +1,4 @@
-import YouTubeDropdown from "./YoutubeDropdown"
+import YouTubeDropdown from "./YouTubeDropdown"
 
 export default function LinksList() {
   return (
