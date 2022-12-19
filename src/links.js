@@ -11,7 +11,7 @@ export default [
         href: "https://grahamvanpelt.bandcamp.com/"
     },
     {
-        linkText: "Island City Radio - (Mixcloud Playlist)",
+        linkText: "Island City Radio Archive",
         isYouTube: false,
         href: "https://www.mixcloud.com/grahamvanpelt/"
     },

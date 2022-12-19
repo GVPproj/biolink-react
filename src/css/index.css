@@ -87,17 +87,17 @@ header {
 /* Header */
 
 .headshot {
-  width: 8rem;
-  height: 8rem;
+  width: 6rem;
+  height: 6rem;
   border-radius: 100%;
   z-index: 1;
-  box-shadow: var(--text-color) 0px 0px 2px 0px;
+  box-shadow: var(--text-color-main) 0px 0px 3px 0px;
 }
 
 .logo {
   width: 95%;
   max-width: 320px;
-  /* margin-bottom: 1em; */
+  margin-bottom: 1em;
 }
 
 .socials-div {
@@ -125,6 +125,7 @@ main{
   flex-direction: column;
   gap: 2em;
   width: 100%;
+  margin: 1em 0 4em;
 }
 
 button{
