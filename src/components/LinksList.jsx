@@ -13,12 +13,12 @@ export default function LinksList() {
           title={link.youTubeTitle}
         />
       )
-    } else if (link.isMixcloud) {
+    } else if (link.mixCloud) {
       return (
         <MixcloudDropdown
           key={link.linkText}
           linkName={link.linkText}
-          iFrame={link.iFrame}
+          mixCloud={link.mixCloud}
         />
       )
     } else {

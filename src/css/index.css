@@ -87,11 +87,11 @@ header {
 /* Header */
 
 .headshot {
-  width: 6rem;
-  height: 6rem;
+  width: 7rem;
+  height: 7rem;
   border-radius: 100%;
   z-index: 1;
-  box-shadow: var(--text-color-main) 0px 0px 3px 0px;
+  box-shadow: var(--text-color-main) 0px 0px 2px 0px;
 }
 
 .logo {
@@ -115,6 +115,11 @@ header {
 .social-svg:focus {
   filter: invert(72%) sepia(88%) saturate(2331%) hue-rotate(297deg)
     brightness(100%) contrast(95%);
+}
+
+header > p{
+  margin-top: 1em;
+  text-align: left;
 }
 
 /* Links List */
