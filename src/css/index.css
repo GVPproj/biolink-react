@@ -36,7 +36,6 @@ select {
   font: inherit;
 }
 
-
 /* Global Settings */
 
 :root {
@@ -82,8 +81,6 @@ header {
   padding: 2em;
 }
 
-
-
 /* Header */
 
 .headshot {
@@ -117,14 +114,14 @@ header {
     brightness(100%) contrast(95%);
 }
 
-header > p{
+header > p {
   /* margin-top: 1em; */
   text-align: left;
 }
 
 /* Links List */
 
-main{
+main {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -133,26 +130,27 @@ main{
   margin: 1em 0 4em;
 }
 
-button{
+button {
   align-self: center;
   background: none;
   width: 95%;
   max-width: 480px;
-  padding: .5em 0;
+  padding: 0.5em 0;
   border: 1px solid var(--accent-color);
   border-radius: 20px;
-  color:  var(--text-color-main);
+  color: var(--text-color-main);
   font-weight: 500;
   cursor: pointer;
 }
 
-button:hover, button:active{
+button:hover,
+button:active {
   background: var(--bg-color-lighter);
 }
 
 /* Footer */
 
-footer{
+footer {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -161,6 +159,6 @@ footer{
   padding: 2em 1em;
 }
 
-footer p{
-  font-size: .75em;
+footer p {
+  font-size: 0.75em;
 }

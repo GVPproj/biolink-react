@@ -1,4 +1,3 @@
-import SocialIcon from "../elements/SocialIcon"
 import SocialIconsGrid from "../elements/SocialIconsGrid"
 
 export default function Header() {
