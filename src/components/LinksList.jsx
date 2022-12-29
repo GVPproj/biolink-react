@@ -1,12 +1,13 @@
 import YouTubeDropdown from "../elements/YouTubeDropdown"
 import MixcloudDropdown from "../elements/MixcloudDropdown"
+import DropdownMantine from "../elements/DropdownMantine"
 import links from "../links"
 
 export default function LinksList() {
   const linkElements = links.map((link) => {
     if (link.isYouTube) {
       return (
-        <YouTubeDropdown
+        <DropdownMantine
           key={link.linkText}
           linkName={link.linkText}
           id={link.youTubeId}
