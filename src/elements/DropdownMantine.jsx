@@ -11,7 +11,7 @@ export default function DropdownMantine(props) {
       <button onClick={() => setOpened((o) => !o)}>{props.linkName}</button>
 
       <Collapse in={opened} transitionDuration={1000}>
-        <div>
+        <div className="embedded-iframe-container">
           <LiteYouTubeEmbed id={props.id} title={props.title} />
         </div>
       </Collapse>
