@@ -11,12 +11,15 @@ Inspired by @craftzdog's Link-In-Bio project and Linktree musician pages, I've b
 ## Learning Experiences
 
 - first time using Lighthouse scoring and analysis to optimize perforance
+- used HSL colour schemes to adjust shades in a simplified way and to create an accessible and readable theme
 - first time using component libraries (Radix and Mantine in this case) to implement handy UI features
   - I tried a few options before settling on the simplest solutions for tooltip and animation functionality
   - animation implementation revealed an issue with the flexbox gap property which led me back to margins for spacing
 
 ## To Do
 
+- test Radix collapsible
+- tooltip on keyboard focus
 - create data folder for mutiple links lists
 - pass in links data as a prop for LinksList(s) for reusability
 - give images width and height to prevent ui jumps
