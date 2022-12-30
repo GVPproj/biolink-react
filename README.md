@@ -19,9 +19,10 @@ Inspired by @craftzdog's Link-In-Bio project and Linktree musician pages, I've b
 ## To Do
 
 - test Radix collapsible
-- tooltip on keyboard focus
+- Youtube playlists via react-lite-youtube-embed
 - create data folder for mutiple links lists
 - pass in links data as a prop for LinksList(s) for reusability
 - give images width and height to prevent ui jumps
-- move css into components for easier maintenence
+- refactor and move css into components for easier maintenence
+- react icons instead of hosting SVG files
 - iterate into SocialIconsGrid instead of hard-coding

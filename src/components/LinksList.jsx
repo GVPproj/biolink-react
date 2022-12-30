@@ -1,8 +1,7 @@
 import YoutubeEmbed from "../elements/YoutubeEmbed"
-import links from "../links"
 
-export default function LinksList() {
-  const linkElements = links.map((link) => {
+export default function LinksList(props) {
+  const linkElements = props.linksData.map((link) => {
     if (link.isYouTube) {
       return (
         <YoutubeEmbed
@@ -12,19 +11,9 @@ export default function LinksList() {
           title={link.youTubeTitle}
         />
       )
-    }
-    // else if (link.mixCloud) {
-    //   return (
-    //     <MixcloudDropdown
-    //       key={link.linkText}
-    //       linkName={link.linkText}
-    //       mixCloud={link.mixCloud}
-    //     />
-    //   )
-    // }
-    else {
+    } else {
       return (
-        <a key={link.linkText} href={link.href} target="_blank">
+        <a tabindex="-1" key={link.linkText} href={link.href} target="_blank">
           <button>{link.linkText}</button>
         </a>
       )

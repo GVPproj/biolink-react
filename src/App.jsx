@@ -1,4 +1,5 @@
 import Header from "./components/Header"
+import linksCurrent from "./data/linksCurrent"
 import LinksList from "./components/LinksList"
 import Footer from "./components/Footer"
 
@@ -6,7 +7,7 @@ function App() {
   return (
     <>
       <Header />
-      <LinksList />
+      <LinksList linksData={linksCurrent} />
       <Footer />
     </>
   )
