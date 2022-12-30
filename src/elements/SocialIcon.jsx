@@ -1,10 +1,10 @@
 import * as Tooltip from "@radix-ui/react-tooltip"
-import '../css/tooltip.css'
+import "../css/tooltip.css"
 
 function SocialIcon(props) {
   return (
     <a href={props.href} target="_blank">
-      <Tooltip.Provider>
+      <Tooltip.Provider delayDuration={200}>
         <Tooltip.Root>
           <Tooltip.Trigger asChild>
             {
