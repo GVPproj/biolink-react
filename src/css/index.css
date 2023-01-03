@@ -114,9 +114,10 @@ header {
     brightness(100%) contrast(95%);
 }
 
-header > p {
+.link-writeup {
   /* margin-top: 1em; */
   text-align: left;
+  padding: 0 2em;
 }
 
 /* Links List */

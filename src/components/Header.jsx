@@ -14,11 +14,6 @@ export default function Header() {
         alt="Graham Van Pelt text"
       ></img>
       <SocialIconsGrid />
-      <p>
-        Hi! I'm releasing a new ambient LP entitled{" "}
-        <strong>'Atlantis Tapes'</strong> on February 22, 2023! The first single
-        will be out January 12th. Stay tuned 😌
-      </p>
     </header>
   )
 }

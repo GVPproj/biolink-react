@@ -7,6 +7,11 @@ function App() {
   return (
     <>
       <Header />
+      <p className="link-writeup">
+        Hi! I'm releasing a new ambient LP entitled{" "}
+        <strong>'Atlantis Tapes'</strong> on February 22, 2023! The first single
+        will be out January 12th. Stay tuned 😌
+      </p>
       <LinksList linksData={linksCurrent} />
       <Footer />
     </>
