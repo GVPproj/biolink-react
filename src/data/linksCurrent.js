@@ -4,6 +4,10 @@ export default [
     href: "https://www.grahamvanpelt.com/",
   },
   {
+    linkText: "Follow me on BandCamp",
+    href: "https://grahamvanpelt.bandcamp.com/follow_me",
+  },
+  {
     linkText: "Island City Radio Archive",
     href: "https://www.mixcloud.com/fsrlive/playlists/island-city-w-graham-van-pelt/",
   },
@@ -18,9 +22,5 @@ export default [
     isYouTube: true,
     youTubeId: "xYTSCZTeGWE",
     youTubeTitle: "Geopotential - Video by Eli Horn",
-  },
-  {
-    linkText: "BandCamp Page",
-    href: "https://grahamvanpelt.bandcamp.com/",
   },
 ]
