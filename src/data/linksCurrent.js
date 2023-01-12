@@ -1,5 +1,9 @@
 export default [
   {
+    linkText: "'Atlantis Tape 1' on Spotify",
+    href: "https://open.spotify.com/album/2uWwB5bsEBlU9cJKBaIqvN?si=08czCcmRSKagLsyPZmXWPg",
+  },
+  {
     linkText: "Official Site",
     href: "https://www.grahamvanpelt.com/",
   },
