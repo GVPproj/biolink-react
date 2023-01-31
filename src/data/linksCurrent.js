@@ -1,7 +1,9 @@
 export default [
   {
-    linkText: "'Atlantis Tape 1' on Spotify",
-    href: "https://open.spotify.com/album/2uWwB5bsEBlU9cJKBaIqvN?si=08czCcmRSKagLsyPZmXWPg",
+    linkText: "'Atlantis Tape 1' - Video",
+    isYouTube: true,
+    youTubeId: "6we_lBhXC4I",
+    youTubeTitle: "Atlantis Tape 1 - Video by Eli Horn",
   },
   {
     linkText: "Official Site",
