@@ -1,6 +1,6 @@
 export default [
   {
-    linkText: "TICKETS - SSI release party Feb 25th",
+    linkText: "TICKETS - Salt Spring show 02/25",
     href: "https://www.eventbrite.com/e/graham-van-pelt-atlantis-tapes-release-party-live-ambient-set-dj-set-tickets-541961851487",
   },
   {
