@@ -1,18 +1,23 @@
 export default [
   {
+    linkText: "TICKETS - Salt Spring release show",
+    href: "https://www.eventbrite.com/e/graham-van-pelt-atlantis-tapes-release-party-live-ambient-set-dj-set-tickets-541961851487",
+  },
+  {
     linkText: "'Atlantis Tape 1' - Video",
     isYouTube: true,
     youTubeId: "6we_lBhXC4I",
     youTubeTitle: "Atlantis Tape 1 - Video by Eli Horn",
   },
   {
-    linkText: "Official Site",
-    href: "https://www.grahamvanpelt.com/",
-  },
-  {
     linkText: "Follow me on BandCamp",
     href: "https://grahamvanpelt.bandcamp.com/follow_me",
   },
+  {
+    linkText: "Official Site",
+    href: "https://www.grahamvanpelt.com/",
+  },
+
   {
     linkText: "Island City Radio Archive",
     href: "https://www.mixcloud.com/fsrlive/playlists/island-city-w-graham-van-pelt/",
