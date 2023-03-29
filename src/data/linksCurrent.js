@@ -1,9 +1,5 @@
 export default [
   {
-    linkText: "TICKETS - Salt Spring show 02/25",
-    href: "https://www.eventbrite.com/e/graham-van-pelt-atlantis-tapes-release-party-live-ambient-set-dj-set-tickets-541961851487",
-  },
-  {
     linkText: "'Atlantis Tape 1' - Animation",
     isYouTube: true,
     youTubeId: "6we_lBhXC4I",

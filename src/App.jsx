@@ -8,10 +8,14 @@ function App() {
     <>
       <Header />
       <p className="link-writeup">
-        Hi! I'm releasing a new ambient LP entitled{" "}
-        <strong>'Atlantis Tapes'</strong> on February 23, 2023! The first two
-        singles are out and listenable on Bandcamp and streaming services. Art
-        and video content by Eli Horn. Check links and videos below...
+        Hi! My latest LP, <strong>'Atlantis Tapes'</strong> is out as of
+        February 23, 2023 on Bandcamp and streaming services. Art and video
+        content by Eli Horn.
+        <br />
+        <br />I also make the online radio show <strong>
+          'Island City'
+        </strong>{" "}
+        each week for fsr.live. Links below!
       </p>
       <LinksList linksData={linksCurrent} />
       <Footer />
