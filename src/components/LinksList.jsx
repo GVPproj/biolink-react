@@ -13,7 +13,7 @@ export default function LinksList(props) {
       )
     } else {
       return (
-        <a tabindex="-1" key={link.linkText} href={link.href} target="_blank">
+        <a tabindex="-1" key={link.linkText} href={link.href} target="_blank" aria-label={link.linkText}>
           <button>{link.linkText}</button>
         </a>
       )
