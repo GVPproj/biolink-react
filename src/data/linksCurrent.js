@@ -1,6 +1,6 @@
 export default [
   {
-    linkText: "💿 Pre-order 'The Lookout' (Bandcamp)",
+    linkText: "💿 Pre-order 'The Lookout'",
     href: "https://grahamvanpelt.bandcamp.com/album/the-lookout",
   },
   {
