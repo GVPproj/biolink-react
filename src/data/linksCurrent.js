@@ -1,7 +1,17 @@
 export default [
   {
-    linkText: "💿 Pre-order 'The Lookout'",
+    linkText: "'The Lookout' - Animation",
+    isYouTube: true,
+    youTubeId: "sygBjCAZb2s",
+    youTubeTitle: "The Lookout - Video by Eli Horn",
+  },
+  {
+    linkText: "'The Lookout' on Bandcamp",
     href: "https://grahamvanpelt.bandcamp.com/album/the-lookout",
+  },
+  {
+    linkText: "📻 Island City Radio Archive 🎙️",
+    href: "https://www.mixcloud.com/fsrlive/playlists/island-city-w-graham-van-pelt/",
   },
   {
     linkText: "'Atlantis Tape 1' - Animation",
@@ -20,10 +30,6 @@ export default [
     isYouTube: true,
     youTubeId: "xYTSCZTeGWE",
     youTubeTitle: "Geopotential - Video by Eli Horn",
-  },
-  {
-    linkText: "📻 Island City Radio Archive 🎙️",
-    href: "https://www.mixcloud.com/fsrlive/playlists/island-city-w-graham-van-pelt/",
   },
   {
     linkText: "Follow me on BandCamp",
