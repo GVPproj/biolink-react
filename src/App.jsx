@@ -1,9 +1,26 @@
+import React, { useEffect } from "react"
 import Header from "./components/Header"
 import linksCurrent from "./data/linksCurrent"
 import LinksList from "./components/LinksList"
 import Footer from "./components/Footer"
+import { getPb } from "./data/pocketbaseUtils"
 
 function App() {
+  const [links, setLinks] = React.useState([])
+
+useEffect(() => {
+    const pb = getPb()
+    const getLinks = async () => {
+      const { items: links } = await pb.collection("bioLinks").getList(1, 50, {
+        sort: '-created',
+        fields: "linkText, href, youTubeId, youTubeTitle",
+      })
+
+      setLinks(links)
+    }
+  getLinks()
+}, [])
+
   return (
     <>
       <Header />
@@ -16,7 +33,8 @@ function App() {
         </strong>{" "}
         each week for fsr.live. Links below!
       </p>
-      <LinksList linksData={linksCurrent} />
+      {/* <LinksList linksData={linksCurrent} /> */}
+      <LinksList linksData={links} />
       <Footer />
     </>
   )

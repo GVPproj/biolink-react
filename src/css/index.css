@@ -122,7 +122,8 @@ header {
 
 /* Links List */
 
-main {
+main,
+section {
   flex: 1;
   display: flex;
   flex-direction: column;
