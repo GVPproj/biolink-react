@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Collapse } from "@mantine/core"
+// import { Collapse } from "@mantine/core"
 import LiteYouTubeEmbed from "react-lite-youtube-embed"
 import "../css/youtube.css"
 
@@ -10,11 +10,12 @@ export default function DropdownMantine(props) {
     <>
       <button onClick={() => setOpened((o) => !o)}>{props.linkName}</button>
 
-      <Collapse in={opened} transitionDuration={1000}>
-        <div className="embedded-iframe-container">
+      {/* <Collapse in={opened} transitionDuration={1000}> */}
+        {/* <p>{props.linkName}</p> */}
+        {opened && <div className="embedded-iframe-container">
           <LiteYouTubeEmbed id={props.id} title={props.title} />
-        </div>
-      </Collapse>
+        </div>}
+      {/* </Collapse> */}
     </>
   )
 }
