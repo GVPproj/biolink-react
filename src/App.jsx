@@ -26,16 +26,23 @@ function App() {
       <Header />
       <h3>Think About Life - 2024 fundraiser!</h3>
       <p className="fundraiser">
-        Martin has been helping out with Maison Elizabeth House in NDG. All
-        proceeds from any digital or physical sales of the band's self-titled on
-        Bandcamp (until the end of the year) will go towards this local charity.
+        Martin from our band has been helping out with Maison Elizabeth House in
+        NDG.
         <br />
         <br />
         Maison Elizabeth House is an NPO that offers support services to young
-        parents experiencing difficulties. If you don't have a copy of their
-        self titled on vinyl (or want to get it for someone as a holiday gift)
-        now is the time. Copies can be picked up from Phonopolis record store in
-        Montreal, or we can ship em :). Link below!
+        parents experiencing difficulties.
+        <br />
+        <br />
+        If you don't have a copy of our 2006 self titled LP on vinyl (or want to
+        get it for someone as a holiday gift), now is the time! Copies can be
+        picked up from Phonopolis record store in Montreal, or we can ship em
+        :).
+        <br />
+        <br />
+        All proceeds from any digital or physical sales of the band's
+        self-titled on Bandcamp (until the end of the year) will go towards this
+        local Montreal charity. Link below!
       </p>
       <hr
         style={{
@@ -52,7 +59,7 @@ function App() {
         <br />I also make the online radio show <strong>
           'Island City'
         </strong>{" "}
-        each week for fsr.live. Links below!
+        each week for fsr.live.
       </p>
       {/* <LinksList linksData={linksCurrent} /> */}
       <LinksList linksData={links} />
