@@ -120,6 +120,13 @@ header {
   padding: 0 2em;
 }
 
+.fundraiser {
+  margin-top: 1em;
+  margin-bottom: 2em;
+  text-align: left;
+  padding: 0 2em;
+}
+
 /* Links List */
 
 main,

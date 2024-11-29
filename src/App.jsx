@@ -8,25 +8,46 @@ import { getPb } from "./data/pocketbaseUtils"
 function App() {
   const [links, setLinks] = React.useState([])
 
-useEffect(() => {
+  useEffect(() => {
     const pb = getPb()
     const getLinks = async () => {
       const { items: links } = await pb.collection("bioLinks").getList(1, 50, {
-        sort: '-created',
+        sort: "-created",
         fields: "linkText, href, youTubeId, youTubeTitle",
       })
 
       setLinks(links)
     }
-  getLinks()
-}, [])
+    getLinks()
+  }, [])
 
   return (
     <>
       <Header />
+      <h3>Think About Life - 2024 fundraiser!</h3>
+      <p className="fundraiser">
+        Martin has been helping out with Maison Elizabeth House in NDG. All
+        proceeds from any digital or physical sales of the band's self-titled on
+        Bandcamp (until the end of the year) will go towards this local charity.
+        <br />
+        <br />
+        Maison Elizabeth House is an NPO that offers support services to young
+        parents experiencing difficulties. If you don't have a copy of their
+        self titled on vinyl (or want to get it for someone as a holiday gift)
+        now is the time. Copies can be picked up from Phonopolis record store in
+        Montreal, or we can ship em :). Link below!
+      </p>
+      <hr
+        style={{
+          border: "1px solid hsl(0, 100%, 100%, 0.17)",
+          width: "100%",
+          marginBottom: "2em",
+        }}
+      />
       <p className="link-writeup">
-        Hi! My latest ambient record, <strong>'The Lookout'</strong> is out as of July 20th, 2023 on <strong>Bandcamp</strong>, and a little later on streaming services. Art and video
-        content as ever by Eli Horn.
+        Hi! My latest ambient record, <strong>'The Lookout'</strong> is out as
+        of July 20th, 2023 on <strong>Bandcamp</strong>, and a little later on
+        streaming services. Art and video content as ever by Eli Horn.
         <br />
         <br />I also make the online radio show <strong>
           'Island City'
