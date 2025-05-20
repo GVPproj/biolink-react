@@ -144,7 +144,7 @@ button {
   background: none;
   width: 95%;
   max-width: 480px;
-  padding: 0.5em 0;
+  padding: 1em 0.5em;
   border: 1px solid var(--accent-color);
   border-radius: 20px;
   color: var(--text-color-main);
