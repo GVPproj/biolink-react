@@ -40,7 +40,7 @@ select {
 
 :root {
   --mono-font-family: "Roboto Mono", monospace;
-  --bg-color: hsl(216, 100%, 29%);
+  --bg-color: hsl(213.93, 100%, 28.43%);
   --bg-color-lighter: hsl(216, 100%, 39%);
   --text-color-main: hsl(0, 100%, 100%, 0.87);
   --accent-color: hsl(338, 86%, 84%);
