@@ -11,10 +11,12 @@ export default function EditRow({ link, onCancel, onSave }) {
   const updateMutation = useUpdateBioLink()
 
   const handleSave = () => {
-    updateMutation.mutate(
-      { id: link.id, data: formData },
-      { onSuccess: onSave }
-    )
+    if (window.confirm(`Save "${formData?.linkText}"?`)) {
+      updateMutation.mutate(
+        { id: link.id, data: formData },
+        { onSuccess: onSave },
+      )
+    }
   }
 
   return (
@@ -22,7 +24,9 @@ export default function EditRow({ link, onCancel, onSave }) {
       <td>
         <input
           value={formData.linkText}
-          onChange={(e) => setFormData({ ...formData, linkText: e.target.value })}
+          onChange={(e) =>
+            setFormData({ ...formData, linkText: e.target.value })
+          }
           required
         />
       </td>
@@ -35,13 +39,17 @@ export default function EditRow({ link, onCancel, onSave }) {
       <td>
         <input
           value={formData.youTubeId}
-          onChange={(e) => setFormData({ ...formData, youTubeId: e.target.value })}
+          onChange={(e) =>
+            setFormData({ ...formData, youTubeId: e.target.value })
+          }
         />
       </td>
       <td>
         <input
           value={formData.youTubeTitle}
-          onChange={(e) => setFormData({ ...formData, youTubeTitle: e.target.value })}
+          onChange={(e) =>
+            setFormData({ ...formData, youTubeTitle: e.target.value })
+          }
         />
       </td>
       <td>{new Date(link.created).toLocaleDateString()}</td>
