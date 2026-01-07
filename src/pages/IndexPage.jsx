@@ -1,12 +1,12 @@
 import React from "react"
-import Header from "./components/Header"
-import LinksList from "./components/LinksList"
-import Footer from "./components/Footer"
-import TextComponent from "./components/TextComponent"
+import Header from "../components/Header"
+import LinksList from "../components/LinksList"
+import Footer from "../components/Footer"
+import TextComponent from "../components/TextComponent"
 import { useQuery } from "@tanstack/react-query"
-import { getPb } from "./data/pocketbaseUtils"
+import { getPb } from "../data/pocketbaseUtils"
 
-function App() {
+export default function IndexPage() {
   const {
     isPending: linksPending,
     error,
@@ -34,5 +34,3 @@ function App() {
     </>
   )
 }
-
-export default App

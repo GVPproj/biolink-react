@@ -1,0 +1,158 @@
+/* Admin Container */
+.admin-container {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2em;
+  text-align: left;
+}
+
+/* Login Form */
+.admin-login-form {
+  max-width: 400px;
+  margin: 4em auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.admin-login-form h1 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.admin-login-form input {
+  padding: 0.75em 1em;
+  border: 1px solid var(--accent-color);
+  border-radius: 8px;
+  background: var(--bg-color-lighter);
+  color: var(--text-color-main);
+}
+
+.admin-login-form input:focus {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+.admin-login-form button {
+  width: 100%;
+  margin: 0.5em 0 0;
+}
+
+/* Error Messages */
+.admin-error {
+  background: hsl(0, 70%, 40%);
+  color: white;
+  padding: 0.75em 1em;
+  border-radius: 8px;
+  margin-bottom: 1em;
+}
+
+/* Admin Header */
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.admin-header h1 {
+  margin: 0;
+}
+
+.admin-logout-btn {
+  width: auto;
+  padding: 0.5em 1.5em;
+  margin: 0;
+}
+
+/* Admin Table */
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2em;
+  font-size: 0.875em;
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 0.75em;
+  text-align: left;
+  border-bottom: 1px solid var(--bg-color-lighter);
+}
+
+.admin-table th {
+  background: var(--bg-color-lighter);
+  font-weight: 500;
+}
+
+.admin-table td button {
+  width: auto;
+  padding: 0.25em 0.75em;
+  margin: 0 0.25em;
+  font-size: 0.875em;
+}
+
+.admin-table td input {
+  width: 100%;
+  padding: 0.35em 0.5em;
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+  background: var(--bg-color);
+  color: var(--text-color-main);
+}
+
+/* Add Button */
+.admin-add-btn {
+  width: auto;
+  padding: 0.5em 1.5em;
+  margin: 0;
+}
+
+/* Add/Edit Forms */
+.admin-add-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+  padding: 1.5em;
+  background: var(--bg-color-lighter);
+  border-radius: 8px;
+  margin-bottom: 2em;
+}
+
+.admin-add-form input {
+  padding: 0.5em 0.75em;
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+  background: var(--bg-color);
+  color: var(--text-color-main);
+}
+
+.admin-form-actions {
+  display: flex;
+  gap: 0.5em;
+}
+
+.admin-form-actions button {
+  width: auto;
+  margin: 0;
+}
+
+/* Edit Row */
+.admin-edit-row {
+  background: var(--bg-color-lighter);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .admin-table {
+    font-size: 0.75em;
+  }
+
+  .admin-table th,
+  .admin-table td {
+    padding: 0.5em;
+  }
+}
